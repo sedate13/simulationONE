@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    height: 100px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #ab2a19;
+    color:white;
+    font-size:30px;
+    margin-bottom:30px;
+    font-weight:bold;
+}
+

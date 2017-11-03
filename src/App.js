@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Bin from './components/Bin';
 import './App.css';
+import ShelfContainer from './components/ShelfContainer';
+import router from './router';
 
-class App extends Component {
-  render() {
+
+export default function App ({children}) {
+ 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      
+      <div>
+       <div className ="app">
+
+         <Bin />
+        {router}
+       
+      </div>
+
+      <div className="shelfContainer">
+        {/* <ShelfContainer/> */}
+        </div>
       </div>
     );
   }
-}
 
-export default App;
+
